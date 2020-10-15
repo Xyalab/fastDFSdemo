@@ -27,7 +27,7 @@ public class TestStorageClient {
         StorageClient storageClient = new StorageClient(trackerServer, storageServer);
         // 6、使用 StorageClient 对象上传图片。
         //扩展名不带“.”
-        String[] strings = storageClient.upload_file("C:\\Users\\Administrator\\Pictures\\Saved Pictures\\2024108.jpg", "jpg",null);
+        String[] strings = storageClient.upload_file("(文件在本地的绝对路径)", "jpg",null);
         // 7、返回数组。包含组名和图片的路径。
         for (String string : strings) {
             System.out.println(string);
